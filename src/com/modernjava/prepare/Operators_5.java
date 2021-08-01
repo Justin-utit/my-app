@@ -17,12 +17,41 @@ public class Operators_5 {
         // 變數 + 變數
         int sum3 = sum2 + sum2;     // 800 (400 + 400)
 
-        System.out.println(1+2);
-        System.out.println(3-1);
-        System.out.println(2*2);
-        System.out.println(4/2);
-        System.out.println(5/2); // 注意 (解法是，使其中一個為浮點數，最後出來就會是浮點數
-        System.out.println(10%7);
+        System.out.println(1 + 2);
+        System.out.println(3 - 1);
+        System.out.println(2 * 2);
+
+        System.out.println();
+        System.out.println();
+
+        System.out.println();
+
+        System.out.println(4 / 2);
+
+        System.out.println(5 / 2); // 注意 (解法是，使其中一個為浮點數，最後出來就會是浮點數
+        // 5.0
+        // 5f
+        // 5d
+
+        System.out.println(10 % 7);
+        System.out.println(2 % 3);
+        System.out.println(0 % 3);
+
+        int num = 1; // 變數++
+        System.out.println(num++); // 先印 再1++
+        System.out.println(++num); // 先1++ 再印
+
+//        System.out.println(num); // 2
+
+
+
+        // System.out.println(num++);
+        // System.out.println(++num);
+
+        int num2 = 3; // 變數--
+
+        // System.out.println(num2--);
+        // System.out.println(--num2);
 
         // Assignment operators are used to assign values to variables.
         // 塞值運算子
@@ -30,7 +59,10 @@ public class Operators_5 {
 
         // +=
         int y = 10;
-        y += 5; // y = y + 5;
+        // y += 5; // y = y + 5;
+        y = y + 5;
+//        System.out.println(y);
+
         System.out.println(y);
 
         int m = 3;
@@ -65,11 +97,11 @@ public class Operators_5 {
 
         // 邏輯運算子: Logical operators are used to determine the logic between variables or values:
         // &&
-        System.out.println(1<2 && 3<4); // 且(兩個都要true才為true)
+        System.out.println(1 < 2 && 3 < 4); // 且(兩個都要true才為true)
         // ||
-        System.out.println(1<2 || 3>4); // 或(一個true即為true)
+        System.out.println(1 < 2 || 3 > 4); // 或(一個true即為true)
         // ! 把結果反過來 !true就是false
-        System.out.println(!(1<2 && 3<4));
+        System.out.println(!(1 < 2 && 3 < 4));
         System.out.println(!true);
 
 

@@ -99,7 +99,7 @@ public class DataTypes_3 {
 
         // Characters 字元
         // The char data type is used to store a single character. The character must be surrounded by single quotes, like 'A' or 'c':
-        char myGrade = 'B';
+        char myGrade = 'a';
         System.out.println(myGrade);
 
         // 電腦間資料交換的編碼表 ASCII stands for the "American Standard Code for Information Interchange".
@@ -116,10 +116,16 @@ public class DataTypes_3 {
         char c1 = 'A';
         char c2 = 65;
         char c3 = '\u0041'; // this is Unicode
+        System.out.println(c1);
+        System.out.println(c2);
+        System.out.println(c3);
+        System.out.println();
+
 
         // 印出來都65
         int code1 = 'A';
         int code2 = '\u0041'; // this is Unicode
+
 
         // Unicode range: ['\u0000','\uffff'] or [0,65535]
         // Character to Unicode to Binary

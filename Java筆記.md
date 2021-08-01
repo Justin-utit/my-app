@@ -2,7 +2,7 @@
 ## Java筆記: 
 
 ###### [2021-08-01]
-
+<https://www.evernote.com/l/AP1KZSiq_YdN74Ina6zw0-xcrjd4QeaGZhc/>
 ###### [2021-07-24]
 <https://www.evernote.com/l/AP3DjrjbRd1JhbcMELDU-Q4THcbg4a7VC4g/>
 ###### [2021-07-18]

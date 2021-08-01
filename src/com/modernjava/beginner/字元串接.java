@@ -19,9 +19,7 @@ public class 字元串接 {
         String str2 = new String(new char[]{'a', 'b', 'c'});
 
         // 方法3
-        String str3 = ""+'x'+'y'+'z';
-
-
+        String str3 = "" + 'x' + 'y' + 'z';
         System.out.println(str);
         System.out.println(str2);
         System.out.println(str3);
