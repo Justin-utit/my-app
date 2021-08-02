@@ -1,6 +1,6 @@
 package com.modernjava.prepare;
 
-public class Booleans {
+public class Booleans_8 {
     public static void main(String[] args) {
         /*
             YES / NO

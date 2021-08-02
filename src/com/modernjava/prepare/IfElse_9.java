@@ -1,6 +1,6 @@
 package com.modernjava.prepare;
 
-public class IfElse {
+public class IfElse_9 {
 
     public static void main(String[] args) {
 
@@ -70,7 +70,7 @@ public class IfElse {
 
         // 如果 我有三百萬以上，我要環境世界
         // 如果 我有二百萬以上，我要買一台車
-        // 用這個說明 if else if 跟 if if 的差別
+        // 用這個說明 if else if else 跟 if if 的差別
 
 
         // 如果 我考過N1 加薪5千
