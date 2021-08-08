@@ -3,9 +3,10 @@ package com.modernjava.prepare;
 public class Strings_6 {
     public static void main(String[] args) {
         String greeting = "Hello";
-
-        String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        // int double
+        String txt = "    ABCDEFGHIJKLMNOPQRSTUVWXYZ    ";
         System.out.println("The length of the txt string is: " + txt.length());
+
 
         // how to read javadoc
 
@@ -19,6 +20,8 @@ public class Strings_6 {
         // 從文件中，找到 trim() 的使用說明
         // 看說明並實際使用
 
+
+
         // 練習
         // 從文件中，找到 toLowerCase() 的使用說明
         // 看說明並實際使用
@@ -28,14 +31,18 @@ public class Strings_6 {
         System.out.println(txt2.toUpperCase());   // Outputs "HELLO WORLD"
         System.out.println(txt2.toLowerCase());   // Outputs "hello world"
 
+
         // 找字串中的某字
         String txt3 = "Please locate where 'locate' occurs!";
         // 前
         System.out.println(txt3.indexOf("locate")); // Outputs 7
+
         // 中
         System.out.println(txt3.indexOf("locate",13)); // Outputs 7
+
         // 後
         System.out.println(txt3.lastIndexOf("locate"));
+
 
         // 串接
         String firstName = "John";

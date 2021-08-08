@@ -92,8 +92,8 @@ public class Operators_5 {
         // 這個很直覺，不用多說明
         int aa = 1;
         int bb = 2;
-        System.out.println(1 == 1);
-        System.out.println(1 != 2);
+        System.out.println(1 == 1); // false
+        System.out.println(1 != 2); // true
 
         // 邏輯運算子: Logical operators are used to determine the logic between variables or values:
         // &&

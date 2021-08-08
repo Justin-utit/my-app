@@ -36,12 +36,12 @@ public class Math_7 {
 
     public static int getRandomNumberUsingRandom(int min, int max) {
         /* 可以用上下邊界去理解
-        以範圍8-10來說
+        以範圍8-10來說 - 8 9 10
         Math.random(): 0.000 - 0.999
         下邊界: 0 + min -> 8
         上邊界: 0.999 * (10 - 8) -> 這個永遠小於2 + 8 = 9.9999999 去浮點後，永遠也不可能到10，這就是需要加1的原因
         */
-        return (int) ( (Math.random() * (max - min + 1)) + min);
+        return (int) ( (Math.random() * (max - min + 1))  +  min);
     }
 
     //  java.util.Random.nextInt method to get a random number:

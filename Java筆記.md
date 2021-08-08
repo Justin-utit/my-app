@@ -1,6 +1,8 @@
 
 ## Java筆記: 
 
+###### [2021-08-08]
+<https://www.evernote.com/l/AP35zpwQWSRHcZE4awOlzpt8UX0tPGIQzPM/>
 ###### [2021-08-01]
 <https://www.evernote.com/l/AP1KZSiq_YdN74Ina6zw0-xcrjd4QeaGZhc/>
 ###### [2021-07-24]
