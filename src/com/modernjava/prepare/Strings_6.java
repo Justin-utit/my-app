@@ -52,15 +52,25 @@ public class Strings_6 {
         // 方法2 (較少用)
         System.out.println(firstName.concat(lastName));
 
+
+
+        // "  \  n  t
+
         // 跳脫字元
         String txt4 = "We are the so-called \"Vikings\" from the north.";
+        System.out.println(txt4);
 
-        String txt5 = "It\'s alright.";
+        // it\'s  john's
+
+        String txt5 = "It's alright.";
+        System.out.println(txt5);
 
         String txt6 = "The character \\ is called backslash.";
+        System.out.println(txt6);
+
 
         String txt7 = "Because strings must be written within quotes, \nJava will misunderstand this string, and generate an error:";
-        // System.out.println(txt7);
+         System.out.println(txt7);
 
         // 實務上幾乎沒有看過\r, 如果你很閒or很有研究精神，有人已經針對\n \r的差別進行了研究，請自行參考。
         // http://puremonkey2010.blogspot.com/2011/10/java-java-n-or-rn.html
@@ -80,16 +90,16 @@ public class Strings_6 {
 
         int x = 10;
         int y = 20;
-        int z = x + y;      // z will be 30 (an integer/number)
+        int z = x + y;
 
         String x1 = "10";
         String y1 = "20";
-        String z1 = x1 + y1;   // z will be 1020 (a String)
+        String z1 = x1 + y1;
 
         // If you add a number and a string, the result will be a string concatenation:
         String x3 = "10";
         int y3 = 20;
-        String z3 = x3 + y3;   // z will be 1020 (a String)
+        String z3 = x3 + y3;
 
 
     }

@@ -97,7 +97,7 @@ public class Operators_5 {
 
         // 邏輯運算子: Logical operators are used to determine the logic between variables or values:
         // &&
-        System.out.println(1 < 2 && 3 < 4); // 且(兩個都要true才為true)
+        System.out.println(3 < 2 && 3 < 4); // 且(兩個都要true才為true)
         // ||
         System.out.println(1 < 2 || 3 > 4); // 或(一個true即為true)
         // ! 把結果反過來 !true就是false
