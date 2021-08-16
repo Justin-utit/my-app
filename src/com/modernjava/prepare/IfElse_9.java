@@ -90,6 +90,11 @@ public class IfElse_9 {
         }
 
 
+
+
+
+
+
         /*
         Conditional (ternary) Operator
         中文翻譯為，「三元運算子」。
@@ -106,7 +111,6 @@ public class IfElse_9 {
 
         int time4 = 20;
         String result = (time4 < 18) ? "Good day." : "Good evening.";
-
         System.out.println(result);
 
 /*
