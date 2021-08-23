@@ -31,7 +31,6 @@ public class Arrays_14 {
         // 存取 屬性 -> 物件.屬性
         // 存取 方法 -> 物件.方法()
 
-
         String[] cars4 = {"Volvo", "BMW", "Ford", "Mazda"};
         for (String i : cars4) {
             System.out.println(i);
