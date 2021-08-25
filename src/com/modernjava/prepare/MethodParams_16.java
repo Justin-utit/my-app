@@ -1,6 +1,7 @@
 package com.modernjava.prepare;
 
 public class MethodParams_16 {
+    // try View > Appearance > Enter Presentation Mode
 
     public static void main(String[] args) {
         myMethod("Liam");

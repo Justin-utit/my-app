@@ -36,6 +36,8 @@ public class Arrays_14 {
             System.out.println(i);
         }
 
+        // try View > Appearance > Enter Presentation Mode
+
 
         int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
         int x = myNumbers[1][2];
