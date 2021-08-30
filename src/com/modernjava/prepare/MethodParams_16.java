@@ -4,6 +4,11 @@ public class MethodParams_16 {
     // try View > Appearance > Enter Presentation Mode
 
     public static void main(String[] args) {
+
+        myMethod();
+
+        myMethod(1);
+
         myMethod("Liam");
         myMethod("Jenny");
         myMethod("Anja");
@@ -19,6 +24,18 @@ public class MethodParams_16 {
         checkAge(20); // Call the checkAge method and pass along an age of 20
     }
 
+    static void myMethod() {
+
+    }
+
+//    static String myMethod() {
+//
+//    }
+
+    static int myMethod(int x) {
+        return 5 + x;
+    }
+
     static void myMethod(String fname) {
         System.out.println(fname + " Refsnes");
     }
@@ -27,9 +44,7 @@ public class MethodParams_16 {
         System.out.println(fname + " is " + age);
     }
 
-    static int myMethod(int x) {
-        return 5 + x;
-    }
+
 
     static int myMethod(int x, int y) {
         return x + y;
@@ -37,6 +52,9 @@ public class MethodParams_16 {
 
     // Create a checkAge() method with an integer variable called age
     static void checkAge(int age) {
+
+        // 方法內，寫判斷、迴圈、運算，呼叫其他方法 …
+
 
         // If age is less than 18, print "access denied"
         if (age < 18) {

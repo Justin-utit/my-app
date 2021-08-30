@@ -2,9 +2,13 @@ package com.modernjava.prepare;
 
 public class Arrays_14 {
 
+
     public static void main(String[] args) {
 
         String car = "Volvo";
+
+
+
         String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
                 // index:  0     ,  1   , 2     , 3
@@ -38,16 +42,26 @@ public class Arrays_14 {
 
         // try View > Appearance > Enter Presentation Mode
 
+        /*
+                { {}, {}, {},...  }
 
-        int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
-        int x = myNumbers[1][2];
-        System.out.println(x);
 
-        for (int i = 0; i < myNumbers.length; i++) {
-            for(int j = 0; j < myNumbers[i].length; j++) {
-                System.out.println(myNumbers[i][j]);
-            }
-        }
+                { {1, 2, 3, 4}, {7, 8, 7} };
+         */
+
+
+        int[][] myNumbers = { {1, 2, 3, 4}, {7, 8, 7} };
+//        int x = myNumbers[1][2];
+//        System.out.println(x);
+        System.out.println();
+
+//        for (int i = 0; i < myNumbers.length; i++) { // i -> 0, 1
+//            // i -> 0
+//            for(int j = 0; j < myNumbers[i].length; j++) { // j -> 0, 1, 2, 3
+//                System.out.println(myNumbers[i][j]); // 1, 2,
+//            }
+//
+//        }
 
     }
 

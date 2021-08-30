@@ -44,23 +44,31 @@ public class HW210823 {
         // 1 宣告一個整數陣列，裡面放3個整數 19 11 70 8 23
         // 2 使用 for each loop, 依序列出 19 11 70 8 23
         int[] l = {19,11,70,8,23};
+        // for(個別物件 : 陣列/集合){
+        //
+        // }
         for(int m : l){
             System.out.println(m);
         }
 
+        /*
+
+
+        第六題: 承上題(第五題)
+                使用 break & continue
+                印出 19 70 8
+         */
         System.out.println("\n第六題: ");
         // 承上題(第五題)
         // 使用 break & continue
         // 印出 19 70 8
-        for(int m : l){
+        for(int m : l){ // 19 11 70 8 23
             if(m==11)
                 continue;
-            System.out.println(m);
+            System.out.println(m); // 8
             if(m==8)
                 break;
         }
-
-
 
 
     }

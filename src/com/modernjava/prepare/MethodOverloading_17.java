@@ -2,8 +2,10 @@ package com.modernjava.prepare;
 
 public class MethodOverloading_17 {
 
+    // Overload (多載) vs. Override (覆寫)
+
     // Note: Multiple methods can have the same name as long as the number and/or type of parameters are different.
-    // 參數的型態不同或參數的數量不同即可形成overload, 但若只有回傳型態不同，則不行
+    // (重點)參數的型態不同或參數的數量不同即可形成overload, 但若只有回傳型態不同，則不行
 
     public static void main(String[] args) {
         // With method overloading, multiple methods can have the same name with different parameters:
@@ -16,6 +18,7 @@ public class MethodOverloading_17 {
 //        plusMethodDouble(4.3, 6.26);
     }
 
+
     static int plusMethodInt(int x, int y) {
         return x + y;
     }
@@ -23,6 +26,8 @@ public class MethodOverloading_17 {
     static double plusMethodDouble(double x, double y) {
         return x + y;
     }
+
+
 
     /*
         Instead of defining two methods that should do the same thing, it is better to overload one.

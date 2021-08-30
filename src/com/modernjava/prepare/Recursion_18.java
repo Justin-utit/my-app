@@ -7,7 +7,7 @@ Java Recursion
     Recursion may be a bit difficult to understand. The best way to figure out how it works is to experiment with it.
  */
 
-public class Recursion_18 {
+public class Recursion_18 { // 遞迴
 
     /*
     Recursion Example
@@ -21,17 +21,47 @@ public class Recursion_18 {
         System.out.println(result);
 
     }
-
+    // 10+9+8…+1
     // Use recursion to add all of the numbers up to 10.
     public static int sum(int k) {
-
+        // real life example obs
         if (k > 0) {
             return k + sum(k - 1);
-        } else {
-            return 0;
         }
-
+        return 0;
+//        else {
+//            return 0;
+//        }
     }
+
+
+
+    /*
+        10 + sum(9)
+             9 + sum(8)
+                 8 + sum(7)
+                            ...
+                                    1+0
+
+        10 + 9 +  8 + .. + 1 + 0
+
+     */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*
     Example Explained
         // 10 + sum(9)

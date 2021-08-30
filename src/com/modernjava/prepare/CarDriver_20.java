@@ -1,5 +1,12 @@
 package com.modernjava.prepare;
 
+    // 物件 = 東西
+    // 鳥 class 類別 -> 設計圖/ 藍圖
+    // 鳥 object 物件
+    // 鳥 attributes 屬性(特徵) e.g. 羽毛的顏色=red, mouse length=3cm, 腳的長短=1cm 、叫聲高低
+    // 鳥 methods 方法(行為) e.g. 捕食、下蛋、飛
+
+
 /*
     Java - What is OOP?
         OOP stands for Object-Oriented Programming.
@@ -50,24 +57,49 @@ package com.modernjava.prepare;
 
 public class CarDriver_20 {
 
+    /*
+        類別 class      -> PC
+        物件 objects    -> p1 p2
+        屬性 attributes ->
+        方法 methods    ->
+     */
+
     public static void main(String[] args) {
-        Car car1 = new Car();
-        Car car2 = new Car();
 
-        car1.color = "red";
-        car2.color = "blue";
+        Bird bird1 = new Bird(); // 產生一個鳥(1)的物件
+        bird1.color = "red";
 
-        car1.getColor();
-        car2.getColor();
 
-        car2.color = "yellow";
-        car2.getColor();
+        Bird bird2 = new Bird(); // 產生一個鳥(2)的物件
+        bird2.color = "blue";
 
-        // Static vs. Non-Static
-        // Static methods can be called without creating objects
-        Car.myStaticMethod();
+        System.out.println(bird1.color);
 
-        System.out.println();
+        System.out.println(bird2.color);
+
+        bird1.fly();
+        bird2.fly();
+
+
+
+
+//        Car car1 = new Car();
+//        Car car2 = new Car();
+//
+//        car1.color = "red";
+//        car2.color = "blue";
+//
+//        car1.getColor();
+//        car2.getColor();
+//
+//        car2.color = "yellow";
+//        car2.getColor();
+//
+//        // Static vs. Non-Static
+//        // Static methods can be called without creating objects
+//        Car.myStaticMethod();
+//
+//        System.out.println();
     }
 
 }

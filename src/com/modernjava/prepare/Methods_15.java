@@ -11,6 +11,12 @@ public class Methods_15 {
     }
 
     static void myMethod() {
+
+        // loop, 條件判斷, 運算, 呼叫其他方法 …
+
         System.out.println("I just got executed!");
     }
+
+
+
 }

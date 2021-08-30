@@ -3,7 +3,7 @@ package com.modernjava.prepare;
 /*
     The public keyword is an access modifier,
     meaning that it is used to set the access level
-    (重要)for classes, attributes, methods and constructors.
+    (重要) for classes, attributes, methods and constructors.
  */
 
 //import com.modernjava.beginner.ModifiersC_21;
@@ -16,6 +16,9 @@ public class AccessModifiersA_21 {
 //        The class is only accessible by classes in the same package.
         new AccessModifiersB_21();
 //        new ModifiersC_21();
+
+        // class1
+        // class2
 
 
         // For attributes, methods and constructors, you can use the one of the following:
