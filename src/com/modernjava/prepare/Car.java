@@ -1,11 +1,16 @@
 package com.modernjava.prepare;
 
-public class Car {
+public class Car extends Vehicle{
 
     // 出廠設定
     public Car(){
         // color = "blue";
     }
+
+//    @Override
+//    public void honk() {
+//        System.out.println("Tuut, tuut! tuut");
+//    }
 
     public Car(int speed, int cc, String color){
         // color = "blue";
