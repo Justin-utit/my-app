@@ -39,7 +39,7 @@ public class HW210830 {
         printFun(3);
 
         /* 7. 英文a-j 分別算是類別/物件/屬性/方法?
-        a. 馬力、排氣量 -> 屬性 attributes
+        a. 馬力、排氣量(engine displacement) -> 屬性 attributes
         b. 發動引擎 -> 方法 methods
         c. 售價 -> 屬性 attributes
         d. 剎車 -> 方法 methods
@@ -58,6 +58,10 @@ public class HW210830 {
         else
             return 1;
     }
+    /*
+        int result = factorial(4);
+
+     */
 
     public static int sum(int start, int end) {
         if (start < end)
@@ -65,11 +69,14 @@ public class HW210830 {
          else
             return 0;
     }
+    /*
+        int result2 = sum(5, 10);
+     */
 
     static void printFun(int test) {
         if (test < 1)
             return;
-        else {
+         else {
             System.out.printf("%d ", test);
 
             printFun(test - 1); // 1-1=0
@@ -78,6 +85,15 @@ public class HW210830 {
             return;
         }
     }
+    /*
+        printFun(3);
+        p(3) -> 3, p(2), 3
+                   p(2) -> 2, p(1), 2
+                              p(1) -> 1, p(0), 1
+
+        這一題考三個概念:
+            遞迴、方法呼叫流程、return & void
+     */
 
 
 }
