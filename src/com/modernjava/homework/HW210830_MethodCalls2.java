@@ -1,33 +1,30 @@
 package com.modernjava.homework;
 
-import com.modernjava.prepare.twenty.Car;
-import com.modernjava.prepare.Engine;
-
 public class HW210830_MethodCalls2 {
+
+    // 介紹 method call stack & heap 概念
 
     public static void main(String[] args) {
 
-        System.out.println("-");
         doWork();
-        System.out.println("--");
 
-        // 介紹 method call stack & heap 概念
-        Car myCar = new Car();
-        System.out.println();
-        myCar = new Car();
-        System.out.println();
-        Engine engine = new Engine();
+
+//        Car car1 = new Car(); // myCar1 = 物件的地址
+//        Car car2 = new Car();
+
+//        car1.hp = 100;
+//        car2.hp = 200;
+//
+//        Engine engine = new Engine();
+//        car2.engine = engine;
+
     }
 
-
     public static void doWork() {
-        System.out.println("doWork");
         doMore();
     }
 
     public static void doMore() {
-        System.out.println("doMore");
     }
-
 
 }

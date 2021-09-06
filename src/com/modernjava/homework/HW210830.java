@@ -11,9 +11,11 @@ public class HW210830 {
         // 2. #2會印出多少
         System.out.println("\n第二題: ");
         for (int i = 0; i < myNumbers.length; i++) {
+
             for(int j = 0; j < myNumbers[i].length; j++) {
                 System.out.printf("%d ", myNumbers[i][j]); // #2
             }
+
             if(i==1)
                 break;
         }
@@ -50,6 +52,8 @@ public class HW210830 {
         i. 自動駕駛 -> 方法 methods
         j. 引擎 -> 物件 objects
          */
+
+        System.out.println("--------------------------------");
     }
 
     static int factorial(int n) {
@@ -57,10 +61,12 @@ public class HW210830 {
             return n * factorial(n-1); // recursive call
         else
             return 1;
+
     }
     /*
         int result = factorial(4);
-
+        4 * f(3)
+        4 * 3 * 2 * 1 * 1 = 24
      */
 
     public static int sum(int start, int end) {
@@ -71,22 +77,33 @@ public class HW210830 {
     }
     /*
         int result2 = sum(5, 10);
+        10 + sum(6,10)
+        10 + 10 + 10 + 10 + 10 + 0
+
      */
 
-    static void printFun(int test) {
-        if (test < 1)
+//    void myMethod1(){
+//
+//
+//        return;
+//    }
+
+    static void printFun(int test) { // 3
+        if (test < 1) // test = 0
             return;
          else {
-            System.out.printf("%d ", test);
+            System.out.printf("%d ", test); //
 
-            printFun(test - 1); // 1-1=0
+            printFun(test - 1); // test=3
 
             System.out.printf("%d ", test);
             return;
         }
     }
+
     /*
         printFun(3);
+
         p(3) -> 3, p(2), 3
                    p(2) -> 2, p(1), 2
                               p(1) -> 1, p(0), 1

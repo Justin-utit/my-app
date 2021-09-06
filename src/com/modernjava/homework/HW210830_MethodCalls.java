@@ -1,8 +1,9 @@
 package com.modernjava.homework;
 
 public class HW210830_MethodCalls {
-
     public static void main(String[] args) {
+
+        int xxx = 10;
 
         System.out.println("-");
         run();
@@ -15,7 +16,6 @@ public class HW210830_MethodCalls {
         System.out.println("-----");
         talk();
         System.out.println("------");
-
 
         // 介紹 method call stack heap 概念
     }

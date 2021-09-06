@@ -28,11 +28,23 @@ public class MethodOverloading_17 {
     }
 
 
+    /*
+            xxx.java -> 目前我們在寫的java程式 (compiler 幫你編譯xxx.java程式)
+            xxx.class (給電腦 Windows, IOS, Linux -> JVM -> JDK11 -> JRE)
+     */
 
     /*
         Instead of defining two methods that should do the same thing, it is better to overload one.
         In the example below, we overload the plusMethod method to work for both int and double:
      */
+    static int sum(){
+        return 0;
+    }
+
+    static int plusMethod(int x){
+        return 0;
+    }
+
     static int plusMethod(int x, int y) {
         return x + y;
     }
@@ -40,6 +52,8 @@ public class MethodOverloading_17 {
     static double plusMethod(double x, double y) {
         return x + y;
     }
+
+
 
     // 參數的型態不同或參數的數量不同即可形成overload, 但若只有回傳型態不同，則不行
     int myMethod(int x){
