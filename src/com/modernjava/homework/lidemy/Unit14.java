@@ -6,7 +6,8 @@ public class Unit14 {
 
         for(int i = 1; i<101; i++){
             if(i%2 != 0)
-                System.out.println(i);
+                System.out.printf("%d ",i);
+//                System.out.println(i);
         }
 
 //        System.out.println(4%2);
