@@ -1,4 +1,4 @@
-package com.modernjava.homework.lidemy;
+package com.modernjava.homework.lidemyanswers;
 
 public class 找最大值 {
     /*

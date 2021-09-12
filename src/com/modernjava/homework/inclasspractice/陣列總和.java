@@ -1,4 +1,4 @@
-package com.modernjava.homework.lidemy;
+package com.modernjava.homework.inclasspractice;
 
 public class 陣列總和 {
     /*
@@ -13,10 +13,8 @@ public class 陣列總和 {
     }
 
     public static int sumArray(int[] arr){
-        int sum = 0;
-        for(int i : arr){
-            sum += i;
-        }
-        return sum;
+
+
+        return 0;
     }
 }

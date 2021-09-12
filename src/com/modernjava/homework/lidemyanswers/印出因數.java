@@ -1,4 +1,4 @@
-package com.modernjava.homework.lidemy;
+package com.modernjava.homework.lidemyanswers;
 /*
     15的因數 -> 餘數為零的那些數字
     1,3,5,15

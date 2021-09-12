@@ -1,4 +1,4 @@
-package com.modernjava.homework.lidemy;
+package com.modernjava.homework.inclasspractice;
 
 public class Unit16_ {
 
