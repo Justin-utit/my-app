@@ -2,9 +2,23 @@ package com.modernjava.prepare.twenty;
 
 public class Animal {
 
+    // 屬性
     int age;
     String gender;
     int weight;
+
+    // 方法
+    public void eat() {
+
+        System.out.println("Animal eat");
+    }
+
+    public void sleep() {
+
+        System.out.println("Animal sleep");
+    }
+
+
 
     public Animal() {
     }
@@ -19,11 +33,5 @@ public class Animal {
         System.out.println("The animal makes a sound");
     }
 
-    public void eat() {
-        System.out.println("Animal eat");
-    }
 
-    public void sleep() {
-        System.out.println("Animal sleep");
-    }
 }

@@ -6,7 +6,6 @@ package com.modernjava.prepare.twenty;
     3 多型
     介面 與 抽象類別 也是在強化相同的目的，不過這個下次再說
 
-
     The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users.
     To achieve this, you must:
     declare class variables/attributes as private
@@ -23,9 +22,11 @@ package com.modernjava.prepare.twenty;
     Increased security of data (set checkpoint in getter and setter)
  */
 public class Encapsulation_23 {
-    private String name; // private = restricted access
+
+    private String name = "xxx"; // private = restricted access
 
     // Getter
+    // read only
     public String getName() {
         return name;
     }
@@ -35,6 +36,8 @@ public class Encapsulation_23 {
         // The this keyword is used to refer to the current object.
         this.name = newName;
     }
+
+
 }
 
 

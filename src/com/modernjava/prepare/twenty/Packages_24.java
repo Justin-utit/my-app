@@ -17,6 +17,10 @@ package com.modernjava.prepare.twenty;
     import package.name.*;   // Import the whole package
  */
 
+
+
+//import java.util.Scanner;
+
 import java.util.Scanner;
 
 public class Packages_24 {
