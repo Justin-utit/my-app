@@ -7,39 +7,6 @@ public class Car extends Vehicle {
     public int hp;
     public Engine engine;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // model
     // manufacturer
     // year of manufacture

@@ -6,10 +6,14 @@ package com.modernjava.prepare.twenty;
 // 鳥 methods 方法(行為) e.g. 捕食、下蛋、飛
 
 // For classes, you can use either public or default
-public class Bird {
+public class Bird extends Animal {
 
     // attribute: public > protected, default, private
     String color; // 屬性
+
+    public Bird(int age, String gender, int weight) {
+        super(age, gender, weight);
+    }
 
     // method: public > protected, default, private
     // 任何類別可以呼叫

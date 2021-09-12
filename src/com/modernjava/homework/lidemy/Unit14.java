@@ -1,7 +1,13 @@
 package com.modernjava.homework.lidemy;
 
 public class Unit14 {
+
+
     // 印出1-100的奇數
+    /*
+        數字 % 2 != 0 -> 奇數
+
+     */
     public static void main(String[] args) {
 
         for(int i = 1; i<101; i++){

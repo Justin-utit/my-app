@@ -66,11 +66,11 @@ public class CarDriver_20 {
 
     public static void main(String[] args) {
 
-        Bird bird1 = new Bird(); // 產生一個鳥(1)的物件
+        Bird bird1 = new Bird(1,"M",30); // 產生一個鳥(1)的物件
         bird1.color = "red";
 
 
-        Bird bird2 = new Bird(); // 產生一個鳥(2)的物件
+        Bird bird2 = new Bird(2, "F", 40); // 產生一個鳥(2)的物件
         bird2.color = "blue";
 
         System.out.println(bird1.color);

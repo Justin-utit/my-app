@@ -11,7 +11,7 @@ package com.modernjava.prepare.twenty;
 public class AccessModifiersA_21 {
     public static void main(String[] args) {
 
-//        For classes, you can use either public or default:
+//        For classes, you can use either public or default: 類別2種 範圍
 //        The class is accessible by any other class
 //        The class is only accessible by classes in the same package.
         new AccessModifiersB_21();
@@ -22,7 +22,7 @@ public class AccessModifiersA_21 {
 
 
         // For attributes, methods and constructors, you can use the one of the following:
-        // 共有4種範圍，由大到小如下:
+        // 方法與屬性 共有4種範圍，由大到小如下:
 //        public		The code is accessible for all classes
 //                      (for all classes 可以用這個當成基準點去思考，public是開放給全類別，其餘的就是只開放給部分類別存取)
 //        protected	    The code is accessible in the same package and subclasses.
