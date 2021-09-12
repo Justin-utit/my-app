@@ -18,10 +18,11 @@ public class Unit16 {
 
 
     public static int findMin(int[] nums){
-        int min = nums[0];
+        // 打開第一張牌，先當成最小
+        int min = nums[0]; // 2
 
         for (int num : nums){
-            if(num < min)
+            if(num < min) // ? < 2
                 min = num;
         }
 
