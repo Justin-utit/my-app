@@ -1,4 +1,4 @@
-package com.modernjava.homework.lidemyanswers;
+package com.modernjava.homework.lidemyanswers.tools;
 
 public class Tools {
 
