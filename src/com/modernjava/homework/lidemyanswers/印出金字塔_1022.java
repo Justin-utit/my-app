@@ -38,14 +38,14 @@ public class 印出金字塔_1022 {
         printPyramid(level);
     }
 
-    public static void printPyramid(int n){ // 4
+    public static void printPyramid(int n){
         // 所需*數
-        int lastLineStarNum = (n*2) - 1; // 7
+        int lastLineStarNum = (n*2) - 1;
 
-        for(int i = 1; i<=n; i++){ // 1 - 3
-            // i = 1...3
-            int startNum = (i*2) -1;                // 5
-            int blankNum = (lastLineStarNum-startNum) / 2; // 2
+        for(int i = 1; i<=n; i++){
+
+            int startNum = (i*2) -1;
+            int blankNum = (lastLineStarNum-startNum) / 2;
 
             for(int j = 1; j<=blankNum; j++)
                 System.out.print(" ");
