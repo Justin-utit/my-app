@@ -11,51 +11,33 @@ public class 最近點對_1033 {
             File myObj = new File("src/com/modernjava/homework/lidemyanswers/input_1033_2.txt");
             Scanner myReader = new Scanner(myObj);
 
-            StringBuilder sb = new StringBuilder();
+            int setOfNumbers = 0;
+            int[][] arrContainer = new int[100][2];
+            int ci = 0;
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
-                 System.out.println(data);
-                sb.append(data);
+                 System.out.println(data); // 100 100
+
+                if(ci==0) { // 跳過第一行 數字N
+                    setOfNumbers = Integer.valueOf(data);
+                    ci++;
+                    continue;
+                }
+
+                String[] strArr = data.split(" ");
+                int[] intArr = {Integer.valueOf(strArr[0]),Integer.valueOf(strArr[1])}; // {100,100}
+
+                arrContainer[ci-1] = intArr;
+                ci++;
             }
 
-            String data = sb.toString();
-//            System.out.println(data);
-
-            int setOfNumbers = Integer.valueOf(data.substring(0,1));
-//            System.out.println(setOfNumbers); // 4 (組資料) = 4個點
-            String dataSet = data.substring(1).replace(" ","");
-            System.out.println(dataSet); // 23131211
-
-            // 先格式化成: int[][] arrBox = new int[4][2];
-
-            // "23131211"
-            // 02
-            // 24
-            // 46
-            // 68
-            // {{0,2},{2,4},{4,6},{6,8}}
-            int[][] arrBox = new int[4][2];
-            int index = 0;
-            for(int i = 0; i<setOfNumbers; i++){ // 0 1 2 3
-
-                String oneSubSet = dataSet.substring(index, index+2);
-                int[] intArr = new int[2];
-                intArr[0] = Integer.valueOf(oneSubSet.substring(0,1));  // 2
-                intArr[1] = Integer.valueOf(oneSubSet.substring(1));    // 3
-                arrBox[i] = intArr;
-
-                index += 2;
-            }
-            // System.out.println(arrBox);
-
-            // arrBox: {{0,2},{2,4},{4,6},{6,8}} 4個點會有6條線
             double minDis = Double.MAX_VALUE;
             for(int i = 0; i<setOfNumbers; i++){ // 0 1 2 3
                 for(int j = i+1; j<setOfNumbers; j++){
                     System.out.print("("+i + ", " + j+")  -> "); // p to p
                     // 0 1
-                    int[] p1 = arrBox[i];
-                    int[] p2 = arrBox[j];
+                    int[] p1 = arrContainer[i];
+                    int[] p2 = arrContainer[j];
                     double distanceOf2Points = getDistanceOf2Points(p1, p2);
                     System.out.println("兩點距離: "+distanceOf2Points);
 
@@ -64,7 +46,7 @@ public class 最近點對_1033 {
                 }
             }
 
-            int[] which2Point = getWhich2Point(setOfNumbers,arrBox,minDis);
+            int[] which2Point = getWhich2Point(setOfNumbers,arrContainer,minDis);
 
             // 請輸出距離最近的兩個點，若是有兩組以上，請輸出最先出現在測資的那組
             System.out.println("距離最近的兩個點: "+which2Point[0]+", "+which2Point[1]); // 點0 點1
@@ -76,10 +58,10 @@ public class 最近點對_1033 {
                 1 1 點4
              */
             // 輸出的時候請先輸出 x 比較小的那個點，若是 x 相同，請先輸出 y 比較小的那個點
-            int px1 = arrBox[which2Point[0]][0];
-            int px2 = arrBox[which2Point[1]][0];
-            int py1 = arrBox[which2Point[0]][1];
-            int py2 = arrBox[which2Point[1]][1];
+            int px1 = arrContainer[which2Point[0]][0];
+            int px2 = arrContainer[which2Point[1]][0];
+            int py1 = arrContainer[which2Point[0]][1];
+            int py2 = arrContainer[which2Point[1]][1];
             if(px1 < px2){
                 System.out.println(px1 + " " + py1);
                 System.out.println(px2 + " " + py2);
