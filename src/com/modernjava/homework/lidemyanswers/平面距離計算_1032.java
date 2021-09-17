@@ -17,6 +17,17 @@ import java.util.Scanner;
     double d1 = 3.14159;
     DecimalFormat df = new DecimalFormat("##.00");
     d1 = Double.parseDouble(df.format(d1));
+
+    2
+        1
+        1
+        2
+        2
+            1.41(兩點間的距離)  x1 y1   x2 y2
+        3
+        3
+        4
+        4
  */
 public class 平面距離計算_1032 {
     public static void main(String[] args) {
