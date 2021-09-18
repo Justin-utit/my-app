@@ -8,7 +8,7 @@ public class ArrayReverse_1036 {
 
     public static void main(String[] args) {
         try {
-            File myObj = new File("src/com/modernjava/homework/lidemyanswers/input_1036_2.txt");
+            File myObj = new File("src/com/modernjava/homework/lidemyanswers/inputdata/input_1036_2.txt");
             Scanner myReader = new Scanner(myObj);
 
             int[] intArr = new int[101];

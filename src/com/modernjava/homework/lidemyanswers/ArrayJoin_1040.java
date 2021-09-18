@@ -4,15 +4,14 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class ArrayFilter_1037 {
-
+public class ArrayJoin_1040 {
     public static void main(String[] args) {
         try {
-            File myObj = new File("src/com/modernjava/homework/lidemyanswers/inputdata/input_1037.txt");
+            File myObj = new File("src/com/modernjava/homework/lidemyanswers/inputdata/input_1040.txt");
             Scanner myReader = new Scanner(myObj);
 
             // 存input data (區域變數要手動給值)
-            int target = 0;
+            String str = null;
             int howManyNums = 0;
             int[] intArr = new int[0];
 
@@ -24,7 +23,7 @@ public class ArrayFilter_1037 {
 //                System.out.println(data);
 
                 if(counter==0)
-                    target = Integer.valueOf(data);
+                    str = data;
 
                 if(counter==1) {
                     howManyNums = Integer.valueOf(data);
@@ -44,13 +43,14 @@ public class ArrayFilter_1037 {
 //            System.out.println(howManyNums);      // 5
 
             // ------------------------------------------------ 以上拿到該拿的東西
-
+            StringBuilder sb = new StringBuilder();
             for(int i : intArr){
-                if(i!=target){
-                    System.out.println(i);
-                }
+                sb.append(i);
+                sb.append(str);
             }
-
+            String result = sb.toString(); // "123"
+            result = result.substring(0,result.length()-1);
+            System.out.println(result);
 
             myReader.close();
         } catch (FileNotFoundException e) {

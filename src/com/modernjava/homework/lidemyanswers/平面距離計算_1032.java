@@ -32,7 +32,7 @@ import java.util.Scanner;
 public class 平面距離計算_1032 {
     public static void main(String[] args) {
         try {
-            File myObj = new File("src/com/modernjava/homework/lidemyanswers/input_1032.txt");
+            File myObj = new File("src/com/modernjava/homework/lidemyanswers/inputdata/input_1032.txt");
             Scanner myReader = new Scanner(myObj);
 
             StringBuilder sb = new StringBuilder();
