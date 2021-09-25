@@ -11,7 +11,7 @@ public class 最大連續和_1048 {
     public static void main(String[] args) {
         // 從檔案把資料讀進來
         try {
-            File myObj = new File("src/com/modernjava/homework/lidemyanswers/inputdata/input_1048.txt");
+            File myObj = new File("src/com/modernjava/homework/lidemyanswers/inputdata/input_1048_2.txt");
             Scanner myReader = new Scanner(myObj);
                 /* 5:   2  -3  5  -3  7
                     連2
