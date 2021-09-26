@@ -7,14 +7,29 @@ public class 陣列總和 {
     範例輸出：6
      */
     public static void main(String[] args) {
-        int[] intArray = {1,2,3};
-        int sum = sumArray(intArray);
-        System.out.println(sum);
+        int[] intArray1 = {1,2,3}; // mac id = 物件的身份證 = xx123
+//        int sum = sumArray(intArray);
+//        System.out.println(sum);
+        int[] intArray2 = {1,2,3};
+        int[] intArray3 = {1,2,3};
+
+        int[] xx = test(intArray1);
+        System.out.println();
     }
 
-    public static int sumArray(int[] arr){
+    public static int[] test(int[] intArr){
+
+        intArr[0] = 9;
+
+        return intArr;
+    }
+
+    public static int sumArray(int[] intArr){
+
+        intArr[0] = 9;
+
         int sum = 0;
-        for(int i : arr){
+        for(int i : intArr){
             sum += i;
         }
         return sum;

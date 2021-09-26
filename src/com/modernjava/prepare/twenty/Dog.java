@@ -2,6 +2,21 @@ package com.modernjava.prepare.twenty;
 
 public class Dog extends Animal {
 
+    @Override
+    public void animalSound() {
+
+        System.out.println("The dog says: bow wow");
+    }
+
+
+
+
+
+
+
+
+
+
     int age;
 
     public Dog(){
@@ -21,11 +36,7 @@ public class Dog extends Animal {
 //        System.out.println();
 //    }
 
-    @Override
-    public void animalSound() {
 
-        System.out.println("The dog says: bow wow");
-    }
 
 
 }

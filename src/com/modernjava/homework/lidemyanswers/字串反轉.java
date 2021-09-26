@@ -14,10 +14,16 @@ public class 字串反轉 {
     }
 
     public static String reverseString(String str){
+
         char[] chars = str.toCharArray(); // hello
-        String reverseStr = "";
+
+        String reverseStr = ""; // +'o'+'l'+'h'
+
+        // [h,e,l,l,o] -> 0 - 4     <- i: 4 3 2 1 0
         for(int i = chars.length-1; i>=0; i--){
-            reverseStr += chars[i];
+            // reverseStr += chars[i];
+            //
+            reverseStr = reverseStr + chars[i];
         }
         return reverseStr;
     }

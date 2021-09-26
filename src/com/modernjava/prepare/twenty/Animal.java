@@ -2,6 +2,20 @@ package com.modernjava.prepare.twenty;
 
 public class Animal {
 
+
+    public void animalSound() {
+
+        System.out.println("The animal makes a sound");
+    }
+
+
+
+
+
+
+
+
+
     // 屬性
     int age;
     String gender;
@@ -28,10 +42,5 @@ public class Animal {
         this.gender = gender;
         this.weight = weight;
     }
-
-    public void animalSound() {
-        System.out.println("The animal makes a sound");
-    }
-
 
 }

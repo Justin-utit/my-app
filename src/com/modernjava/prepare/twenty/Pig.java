@@ -2,6 +2,15 @@ package com.modernjava.prepare.twenty;
 
 public class Pig extends Animal {
 
+    public void animalSound() {
+
+        System.out.println("The pig says: wee wee");
+    }
+
+
+
+
+
 
     public void eat() {
 
@@ -13,8 +22,5 @@ public class Pig extends Animal {
         System.out.println("Pig sleep");
     }
 
-    public void animalSound() {
 
-        System.out.println("The pig says: wee wee");
-    }
 }
