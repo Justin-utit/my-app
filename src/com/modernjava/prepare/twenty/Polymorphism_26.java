@@ -18,10 +18,14 @@ public class Polymorphism_26 {
     public static void main(String[] args) {
         Animal myAnimal = new Animal();  // Create a Animal object
         Animal myPig = new Pig();  // Create a Pig object
-//        Animal myDog = new Dog();  // Create a Dog object
+        Animal myDog = new Dog();  // Create a Dog object
+
         myAnimal.animalSound();
         myPig.animalSound();
-//        myDog.animalSound();
+        myDog.animalSound();
+
+        // 為什麼加@Override?
+        // 多型的實務情境
     }
 
 }

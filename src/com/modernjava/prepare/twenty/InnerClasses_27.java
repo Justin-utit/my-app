@@ -10,43 +10,52 @@ package com.modernjava.prepare.twenty;
 
 class OuterClass {
 
-    int x = 10;
+    int outerVar = 10;
+    public void outerClassMethod(){
+        System.out.println("myTempMethod");
+    }
 
     class InnerClass {
-        int y = 5;
-        public int myInnerMethod() {
+        int innerVar = 5;
+        public void innerClassMethod() {
             // access attributes and methods of the outer class
-            myTempMethod();
-            return x;
+            outerClassMethod();
+            System.out.println(outerVar);
         }
     }
 
     // If you don't want outside objects to access the inner class, declare the class as private:
     private class InnerClass2 {
-        int y = 5;
+        int innerVar2 = 2;
     }
 
     static class InnerClass3 {
-        int y = 6;
+        int innverVar3 = 3;
     }
 
-    public void myTempMethod(){
-        System.out.println("myTempMethod");
-    }
+
 }
 
 public class InnerClasses_27 {
     public static void main(String[] args) {
-        OuterClass myOuter = new OuterClass();
-        OuterClass.InnerClass myInner = myOuter.new InnerClass();
-        System.out.println(myInner.y + myOuter.x);
+        OuterClass myOuter = new OuterClass(); // 一般的new
+        OuterClass.InnerClass myInner = myOuter.new InnerClass(); // 取得該inner class
+        System.out.println(myOuter.outerVar); // 可直取自己的實體變數
+        System.out.println(myInner.innerVar); // 可直取自己的實體變數
+        myInner.innerClassMethod();    // inner class 可以透過method存取 outer class，但不能直接存取。
 
+
+        // 若為static的inner class, 就可以直接存取該inner class 不用new
         OuterClass.InnerClass3 myInner3 = new OuterClass.InnerClass3();
-        System.out.println(myInner3.y);
+        System.out.println(myInner3.innverVar3);
+
 
         // One advantage of inner classes,
         // is that they can access attributes and methods of the outer class:
-        System.out.println(myInner.myInnerMethod());
+        // via its method (上有實例)，但必須透過自己的方法才可以，不能直接拿外面的
+        myInner.innerClassMethod();
+
+        // 補充: inner class 本身實務上很少用到，不過會出現於程式庫或google來的solutions, 所以還是大概得知道一下
     }
 }
 

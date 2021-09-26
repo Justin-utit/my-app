@@ -15,9 +15,9 @@ public class 找最大值 {
     public static int findMax(int[] intArr){
         int max = intArr[0];
         for(int i : intArr){
-            if(i > max){
+            if(i > max)
                 max = i;
-            }
+
         }
         return max;
     }

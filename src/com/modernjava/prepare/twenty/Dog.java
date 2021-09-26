@@ -1,6 +1,6 @@
 package com.modernjava.prepare.twenty;
 
-public class Dog {
+public class Dog extends Animal {
 
     int age;
 
@@ -21,10 +21,11 @@ public class Dog {
 //        System.out.println();
 //    }
 
-    //    public void animalSound() {
-//
-//        System.out.println("The dog says: bow wow");
-//    }
+    @Override
+    public void animalSound() {
+
+        System.out.println("The dog says: bow wow");
+    }
 
 
 }
