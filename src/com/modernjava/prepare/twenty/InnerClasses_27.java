@@ -1,7 +1,7 @@
 package com.modernjava.prepare.twenty;
 /*
     In Java, it is also possible to nest classes (a class within a class).
-    The purpose of nested classes is to group classes that belong together,
+    目的 The purpose of nested classes is to group classes that belong together,
     which makes your code more readable and maintainable.
 
     To access the inner class, create an object of the outer class,
@@ -55,7 +55,8 @@ public class InnerClasses_27 {
         // via its method (上有實例)，但必須透過自己的方法才可以，不能直接拿外面的
         myInner.innerClassMethod();
 
-        // 補充: inner class 本身實務上很少用到，不過會出現於程式庫或google來的solutions, 所以還是大概得知道一下
+
+        // 補充: inner class 本身實務上不算太常用到，不過會出現於程式庫或google來的solutions, 所以還是大概得知道一下
     }
 }
 

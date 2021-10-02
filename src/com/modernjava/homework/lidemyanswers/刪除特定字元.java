@@ -1,6 +1,6 @@
 package com.modernjava.homework.lidemyanswers;
 
-public class Unit27 {
+public class 刪除特定字元 {
     // 刪除特定字元
     /*
         給定一個字串 "hello"

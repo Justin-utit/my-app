@@ -1,4 +1,4 @@
-package com.modernjava.prepare;
+package com.modernjava.prepare.one;
 
 public class Booleans_8 {
     public static void main(String[] args) {

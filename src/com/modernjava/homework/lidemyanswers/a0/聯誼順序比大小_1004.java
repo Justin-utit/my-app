@@ -11,9 +11,9 @@ public class 聯誼順序比大小_1004 {
 
         for(int i = 0; i<int2DArr.length; i++){
 
-            int num1 = int2DArr[i][0];
-            int num2 = int2DArr[i][1];
-            int num3 = int2DArr[i][2];
+            int num1 = int2DArr[i][0]; // A
+            int num2 = int2DArr[i][1]; // B
+            int num3 = int2DArr[i][2]; // K -> K 只會有兩種情況：1 或是 -1，若是 1 代表數字大的獲勝，K 若是 -1 代表數字小的獲勝
 
             if(num3==1){ // 數字大的勝
                 if(num1>num2){

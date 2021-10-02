@@ -44,6 +44,10 @@ public class Interface_29 {
         Pig2 myPig = new Pig2();  // Create a Pig object
         myPig.animalSound();
         myPig.sleep();
+
+        Animal2 myPig2 = new Pig2();  // Create a Pig object
+        myPig2.animalSound();
+        myPig2.sleep();
     }
 
 }

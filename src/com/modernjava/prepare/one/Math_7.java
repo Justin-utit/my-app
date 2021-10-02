@@ -1,4 +1,4 @@
-package com.modernjava.prepare;
+package com.modernjava.prepare.one;
 
 import java.util.Random;
 

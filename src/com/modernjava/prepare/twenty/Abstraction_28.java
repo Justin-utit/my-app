@@ -9,7 +9,7 @@ package com.modernjava.prepare.twenty;
     (access modifier: e.g. private, public, protected...)
 
     Abstract class: is a restricted class that cannot be used to create objects
-    (to access it, it must be inherited from another class). 抽象類別，不能new之，要用的話，要透過使用另一個class繼承
+    (to access it, it must be inherited from another class). 抽象類別，不能被new，要用的話，要透過使用另一個class繼承
 
     Abstract method: can only be used in an abstract class, and it does not have a body.
     (重要) The body is provided by the subclass (inherited from).

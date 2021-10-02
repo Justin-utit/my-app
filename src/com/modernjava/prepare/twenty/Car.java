@@ -1,6 +1,6 @@
 package com.modernjava.prepare.twenty;
 
-import com.modernjava.prepare.Engine;
+import com.modernjava.prepare.one.Engine;
 
 public class Car extends Vehicle {
 

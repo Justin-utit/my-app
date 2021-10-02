@@ -1,4 +1,4 @@
-package com.modernjava.prepare;
+package com.modernjava.prepare.one;
 
 // class 類別
 // variable 變數 (類別的成員1)
