@@ -16,17 +16,7 @@ public class 刪除特定字元 {
 
     public static String removeCertainCharacter(String str, char delThisChar){
 
-        char[] charArr = str.toCharArray();
-        String container = "";
 
-        for(int i = 0; i<charArr.length; i++){
-            char currentChar = charArr[i];
-            if(currentChar != delThisChar)
-                container += currentChar;
-
-        }
-
-        return container;
     }
 
 

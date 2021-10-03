@@ -1,8 +1,13 @@
 
 ## Java筆記與作業:
+
+###### [2021-10-03]
+<https://www.evernote.com/l/AP2u6Ae4AZZJf5mkXmrvrRVEiq56il0AZ60/>
+###### [2021-09-26]
+<https://www.evernote.com/l/AP2ZVugJZlNBf4_qElHycoPLzfndEzRPwAI/>
+
 ###### [2021-09-12]
 <https://www.evernote.com/l/AP1piw2vv9pBHItLE_WTNKdUb4VTi4xxpQA//>
-
 
 ###### [2021-09-07]
 <https://www.evernote.com/l/AP0vugzm3WFJP66VeAsElJ_nnqZEAwStEnQ/>

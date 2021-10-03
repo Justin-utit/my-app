@@ -9,6 +9,14 @@ package com.modernjava.prepare.twenty;
  */
 
 class OuterClass {
+    /*
+        OuterClass myOuter = new OuterClass(); // 一般的new
+        OuterClass.InnerClass myInner = myOuter.new InnerClass(); // 取得該inner class
+        myInner.innerClassMethod();    // inner class 可以透過method存取 outer class，但不能直接存取。
+
+        System.out.println(myOuter.outerVar); // 可直取自己的實體變數
+        System.out.println(myInner.innerVar); // 可直取自己的實體變數
+     */
 
     int outerVar = 10;
     public void outerClassMethod(){
@@ -40,9 +48,9 @@ public class InnerClasses_27 {
     public static void main(String[] args) {
         OuterClass myOuter = new OuterClass(); // 一般的new
         OuterClass.InnerClass myInner = myOuter.new InnerClass(); // 取得該inner class
+        myInner.innerClassMethod();    // inner class 可以透過method存取 outer class，但不能直接存取。
         System.out.println(myOuter.outerVar); // 可直取自己的實體變數
         System.out.println(myInner.innerVar); // 可直取自己的實體變數
-        myInner.innerClassMethod();    // inner class 可以透過method存取 outer class，但不能直接存取。
 
 
         // 若為static的inner class, 就可以直接存取該inner class 不用new
@@ -56,7 +64,7 @@ public class InnerClasses_27 {
         myInner.innerClassMethod();
 
 
-        // 補充: inner class 本身實務上不算太常用到，不過會出現於程式庫或google來的solutions, 所以還是大概得知道一下
+        // 補充: inner class 本身實務上不算太常用到，不過會出現於程式庫 或 google來的solutions, 所以還是大概得知道一下
     }
 }
 

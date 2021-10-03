@@ -26,16 +26,7 @@ public class 字串轉大寫 {
 
     public static String toUpperCase(String str){
 
-        char[] charArr = str.toCharArray();
 
-        for(int i = 0; i<charArr.length; i++){
-            int charInt = charArr[i];
-            if(charInt>=97 && charInt<=122){ // 該字元為小寫
-                charArr[i] = (char)(charInt - 32); // 轉大寫塞回去
-            }
-        }
-
-        return String.valueOf(charArr);
     }
 
 }
