@@ -9,14 +9,6 @@ package com.modernjava.prepare.twenty;
  */
 
 class OuterClass {
-    /*
-        OuterClass myOuter = new OuterClass(); // 一般的new
-        OuterClass.InnerClass myInner = myOuter.new InnerClass(); // 取得該inner class
-        myInner.innerClassMethod();    // inner class 可以透過method存取 outer class，但不能直接存取。
-
-        System.out.println(myOuter.outerVar); // 可直取自己的實體變數
-        System.out.println(myInner.innerVar); // 可直取自己的實體變數
-     */
 
     int outerVar = 10;
     public void outerClassMethod(){
@@ -29,6 +21,10 @@ class OuterClass {
             // access attributes and methods of the outer class
             outerClassMethod();
             System.out.println(outerVar);
+        }
+
+        public void outerClassMethod(){
+            System.out.println("xxx");
         }
     }
 
@@ -48,6 +44,8 @@ public class InnerClasses_27 {
     public static void main(String[] args) {
         OuterClass myOuter = new OuterClass(); // 一般的new
         OuterClass.InnerClass myInner = myOuter.new InnerClass(); // 取得該inner class
+
+        myOuter.outerClassMethod();
         myInner.innerClassMethod();    // inner class 可以透過method存取 outer class，但不能直接存取。
         System.out.println(myOuter.outerVar); // 可直取自己的實體變數
         System.out.println(myInner.innerVar); // 可直取自己的實體變數

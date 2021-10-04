@@ -9,9 +9,9 @@ public class 字串轉大寫 {
      */
     public static void main(String[] args) {
 
-        char x = 'a';
-        char y = 'a' - 32;
-        System.out.println(y);
+//        char x = 'a';
+//        char y = 'a' - 32;
+//        System.out.println(y);
 
 
         /*
@@ -19,14 +19,14 @@ public class 字串轉大寫 {
         若為大寫字母，不動
         若為小寫字母，轉大寫
          */
-        String str = "Justin Chen";
+        String str = "Justin Chen"; // JUSTIN CHEN
         String upperCase = toUpperCase(str);
         System.out.println(upperCase);
     }
 
     public static String toUpperCase(String str){
 
-
+        return null;
     }
 
 }

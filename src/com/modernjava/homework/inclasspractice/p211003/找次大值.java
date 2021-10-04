@@ -6,9 +6,7 @@ public class 找次大值 {
         左側放兩張牌，最大的 與 次大的
         現在翻開一張牌
         case 1 牌 > 最大 ->
-
         case 2 最大 > 牌 > 次大
-
         case 3 次大 > 牌
      */
     public static void main(String[] args) {
@@ -21,6 +19,7 @@ public class 找次大值 {
 
     public static int findSecondLargest(int[] intArr) {
 
+        return 0;
     }
 
 }

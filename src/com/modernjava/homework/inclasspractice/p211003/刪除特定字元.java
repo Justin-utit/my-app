@@ -17,6 +17,7 @@ public class 刪除特定字元 {
     public static String removeCertainCharacter(String str, char delThisChar){
 
 
+        return null;
     }
 
 
