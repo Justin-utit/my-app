@@ -21,8 +21,8 @@ public class 找次大值 {
 
     public static int findSecondLargest(int[] intArr) {
         // 因為是存最大與次大值，所以一開始初值先給一個很小的整數，這裡給-1
-        int largest = -1;
-        int secondLargest = -1;
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
 
         for(int i = 0; i< intArr.length; i++){
             if(intArr[i] > largest){

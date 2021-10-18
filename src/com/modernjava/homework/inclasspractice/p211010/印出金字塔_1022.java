@@ -1,4 +1,4 @@
-package com.modernjava.homework.lidemyanswers.a2;
+package com.modernjava.homework.inclasspractice.p211010;
 
 // https://oj.lidemy.com/problem/1022
 /*
@@ -39,27 +39,8 @@ public class 印出金字塔_1022 {
     }
 
     public static void printPyramid(int n){
-        // 所需*數
-        int lastLineStarNum = (n*2) - 1;
 
-        for(int i = 1; i<=n; i++){
 
-            int startNum = (i*2) -1;
-            int blankNum = (lastLineStarNum-startNum) / 2;
-
-            for(int j = 1; j<=blankNum; j++)
-                System.out.print(" ");
-
-            for(int k = 1; k<=startNum; k++)
-                System.out.print("*");
-
-            for(int j = 1; j<=blankNum; j++){
-                if(j==blankNum)
-                    System.out.println(" ");
-                else
-                    System.out.print(" ");
-            }
-        }
 
     }
 
