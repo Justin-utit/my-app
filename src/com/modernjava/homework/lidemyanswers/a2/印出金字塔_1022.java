@@ -39,13 +39,13 @@ public class 印出金字塔_1022 {
     }
 
     public static void printPyramid(int n){
-        // 所需*數
+        // 最後一排所需*數
         int lastLineStarNum = (n*2) - 1;
 
         for(int i = 1; i<=n; i++){
 
             int startNum = (i*2) -1;
-            int blankNum = (lastLineStarNum-startNum) / 2;
+            int blankNum = (lastLineStarNum-startNum) / 2; // 3
 
             for(int j = 1; j<=blankNum; j++)
                 System.out.print(" ");

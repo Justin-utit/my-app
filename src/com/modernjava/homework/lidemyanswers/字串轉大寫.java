@@ -13,6 +13,13 @@ public class 字串轉大寫 {
         char y = 'a' - 32;
         System.out.println(y);
 
+        char a = 10;
+        int b = 'a';
+
+        char[] chars = new char[1];
+        chars[0] = 10;
+        chars[0] = a;
+
 
         /*
         字串轉大寫
@@ -31,7 +38,8 @@ public class 字串轉大寫 {
         for(int i = 0; i<charArr.length; i++){
             int charInt = charArr[i];
             if(charInt>=97 && charInt<=122){ // 該字元為小寫
-                charArr[i] = (char)(charInt - 32); // 轉大寫塞回去
+                System.out.println((charInt - 32));
+                charArr[i] = (char) (charInt - 32); // 轉大寫塞回去
             }
         }
 
