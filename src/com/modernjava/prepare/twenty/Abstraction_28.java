@@ -17,6 +17,8 @@ package com.modernjava.prepare.twenty;
     An abstract class can have both abstract and regular methods:
  */
 
+
+
 // Abstract class (抽象類別: 可以照字面意思理解為，比較模糊的，沒那麼清楚明確定義的類別)
 abstract class Animal1 {
     // Abstract method (does not have a body)
@@ -29,9 +31,19 @@ abstract class Animal1 {
 
 // Subclass (inherit from Animal)
 class Pig1 extends Animal1 {
+
+    @Override
     public void animalSound() {
-        // The body of animalSound() is provided here
-        System.out.println("The pig says: wee wee");
+        System.out.println("豬叫聲");
+    }
+}
+
+// Subclass (inherit from Animal)
+class Dog1 extends Animal1 {
+
+    @Override
+    public void animalSound() {
+        System.out.println("狗叫聲");
     }
 }
 
@@ -41,8 +53,9 @@ public class Abstraction_28 {
         myPig1.animalSound();
         myPig1.sleep();
 
-//        Animal1 myPig2 = new Pig1();
-//        myPig2.animalSound();
-//        myPig2.sleep();
+
+        Animal1 dog1 = new Dog1();
+        dog1.animalSound();
+        dog1.sleep();
     }
 }

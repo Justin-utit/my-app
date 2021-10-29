@@ -26,11 +26,18 @@ public class Enums_30 {
         HIGH
     }
 
+    public static int num = 0;
     public static final double PI = 3.1415967;
 
     public static void main(String[] args) {
         Level myVar = Level.MEDIUM;
         System.out.println(myVar);
+
+        String[] strArr = new String[7];
+        strArr[0] = "MONDAY";
+
+        // 因為它是變數
+//        num = 10;
 
         // Enums are often used in switch statements to check for corresponding values:
         switch(myVar) {

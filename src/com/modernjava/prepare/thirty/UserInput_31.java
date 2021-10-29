@@ -4,12 +4,15 @@ import java.util.Scanner;
 
 public class UserInput_31 {
     public static void main(String[] args) {
+        /*
+        套件、api、Library -> 直接使用別人已經寫好的程式
+
         Scanner myObj = new Scanner(System.in);  // Create a Scanner object
         System.out.println("Enter username");
 
         String userName = myObj.nextLine();  // Read user input
         System.out.println("Username is: " + userName);  // Output user input
-
+*/
 
         Scanner myObj2 = new Scanner(System.in);
 

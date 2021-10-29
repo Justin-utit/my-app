@@ -20,6 +20,13 @@ package com.modernjava.prepare.twenty;
 
  */
 
+/*
+        class 成品
+        abstract class 半成品
+        interface 只是未實作的合約
+ */
+
+
 // Interface
 interface Animal2 {
     public void animalSound(); // interface method (does not have a body)

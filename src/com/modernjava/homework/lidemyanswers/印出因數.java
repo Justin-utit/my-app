@@ -15,8 +15,9 @@ public class 印出因數 {
 
     public static void printFactors(int num){
         for (int i = 1; i<=15; i++){
-            if(num % i == 0)
-                System.out.printf("%d ",i);
+            if(num % i == 0) {
+                System.out.printf("%d ", i);
+            }
         }
     }
 
