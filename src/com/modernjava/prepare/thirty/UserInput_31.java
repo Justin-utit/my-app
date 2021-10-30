@@ -1,6 +1,8 @@
 package com.modernjava.prepare.thirty;
 
+
 import java.util.Scanner;
+
 
 public class UserInput_31 {
     public static void main(String[] args) {
@@ -12,7 +14,7 @@ public class UserInput_31 {
 
         String userName = myObj.nextLine();  // Read user input
         System.out.println("Username is: " + userName);  // Output user input
-*/
+        */
 
         Scanner myObj2 = new Scanner(System.in);
 

@@ -34,8 +34,11 @@ class Pig1 extends Animal1 {
 
     @Override
     public void animalSound() {
+
         System.out.println("豬叫聲");
+
     }
+
 }
 
 // Subclass (inherit from Animal)
@@ -45,6 +48,7 @@ class Dog1 extends Animal1 {
     public void animalSound() {
         System.out.println("狗叫聲");
     }
+
 }
 
 public class Abstraction_28 {
@@ -53,9 +57,24 @@ public class Abstraction_28 {
         myPig1.animalSound();
         myPig1.sleep();
 
-
-        Animal1 dog1 = new Dog1();
+        Animal1 dog1 = new Pig1();
         dog1.animalSound();
         dog1.sleep();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

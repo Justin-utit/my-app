@@ -29,6 +29,7 @@ public class Enums_30 {
     public static int num = 0;
     public static final double PI = 3.1415967;
 
+
     public static void main(String[] args) {
         Level myVar = Level.MEDIUM;
         System.out.println(myVar);
@@ -40,7 +41,7 @@ public class Enums_30 {
 //        num = 10;
 
         // Enums are often used in switch statements to check for corresponding values:
-        switch(myVar) {
+        switch(myVar) { // 字串或是int
             case LOW:
                 System.out.println("Low level");
                 break;

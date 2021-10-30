@@ -14,7 +14,7 @@ public class 刪除特定字元 {
         System.out.println(modifiedStr);
     }
 
-    public static String removeCertainCharacter(String str, char delThisChar){
+    protected static String removeCertainCharacter(String str, char delThisChar){
 
         char[] charArr = str.toCharArray();
         String container = "";

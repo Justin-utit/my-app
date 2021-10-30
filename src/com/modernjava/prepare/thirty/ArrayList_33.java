@@ -11,19 +11,44 @@ import java.util.Collections;
  */
 public class ArrayList_33 {
     public static void main(String[] args) {
+        // 陣列 -> 裝(save)一樣的東西的容器
+        // ""
+        // Date
+        // Integer
+
+        String[] strArr = new String[12];
+
+        // 陣列加強版
         ArrayList<String> cars = new ArrayList<>();
+        // 10 + 10 + 10
+        // 21
+
+        // 如何知道 ArrayList的初始大小
+
+        // ArrayList實作-> 之後的作業
         cars.add("Volvo");
         cars.add("BMW");
         cars.add("Ford");
         cars.add("Mazda");
         System.out.println(cars);
 
-        String zero = cars.get(0);
+        // [0] [1] [2] [3]
+        // V    B   F   M
+
+        // ArrayList -> 適合 get & search
+        // LinkedList -> 適合 刪除 / 新增 ->
+
+        // 21.10.30 ends here
+
+        String xxx = strArr[0];
+        String zero = cars.get(3);
         System.out.println(zero);
+
 
         cars.set(0, "Opel");
         zero = cars.get(0);
         System.out.println(zero);
+
 
         cars.remove(0);
         zero = cars.get(0);

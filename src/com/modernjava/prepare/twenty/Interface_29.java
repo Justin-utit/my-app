@@ -29,6 +29,10 @@ package com.modernjava.prepare.twenty;
 
 // Interface
 interface Animal2 {
+    // public
+    // protected: 同目錄下 & 繼承者
+    // --
+    // private
     public void animalSound(); // interface method (does not have a body)
     public void sleep(); // interface method (does not have a body)
 }
