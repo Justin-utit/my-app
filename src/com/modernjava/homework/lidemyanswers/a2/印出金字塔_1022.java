@@ -44,7 +44,7 @@ public class 印出金字塔_1022 {
 
         for(int i = 1; i<=n; i++){
 
-            int startNum = (i*2) -1;
+            int startNum = (i*2) -1; // 該層的星星數量
             int blankNum = (lastLineStarNum-startNum) / 2; // 3
 
             for(int j = 1; j<=blankNum; j++)
@@ -54,7 +54,7 @@ public class 印出金字塔_1022 {
                 System.out.print("*");
 
             for(int j = 1; j<=blankNum; j++){
-                if(j==blankNum)
+                if(j==blankNum) // 觸邊換行
                     System.out.println(" ");
                 else
                     System.out.print(" ");

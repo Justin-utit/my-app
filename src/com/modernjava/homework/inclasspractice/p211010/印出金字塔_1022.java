@@ -31,7 +31,7 @@ package com.modernjava.homework.inclasspractice.p211010;
         Output
         請輸出 N 層金字塔的圖形
  */
-public class 印出金字塔_1022 {
+class 印出金字塔_1022 {
 
     public static void main(String[] args) {
         int level = 10;
