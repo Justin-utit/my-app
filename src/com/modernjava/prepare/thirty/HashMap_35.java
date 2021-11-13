@@ -16,26 +16,34 @@ like: String keys and String values:
  */
     public static void main(String[] args) {
         // Create a HashMap object called capitalCities
-        HashMap<String, String> capitalCities = new HashMap<String, String>();
-
+        Map<String, String> capitalCities = new HashMap<>();
         // Add keys and values (Country, City)
         capitalCities.put("England", "London");
         capitalCities.put("Germany", "Berlin");
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington DC");
+        capitalCities.put("國家","首都");
+
         System.out.println(capitalCities);
+
+        /*
+                apple       -> target -->    key
+                -> 解釋                -->   value
+         */
+
 
         /*
         Access an Item
         To access a value in the HashMap, use the get() method and refer to its key:
          */
-        capitalCities.get("England");
+        String capital = capitalCities.get("England");
+        System.out.println(capital);
 
         // To remove an item, use the remove() method and refer to the key:
         capitalCities.remove("England");
 
         // To remove all items, use the clear() method:
-//        capitalCities.clear();
+       // capitalCities.clear();
 
         // To find out how many items there are, use the size() method:
         capitalCities.size();
@@ -55,12 +63,12 @@ like: String keys and String values:
         for (String i : capitalCities.values()) {
             System.out.println(i);
         }
-
+/*
         // Print keys and values
         for (String i : capitalCities.keySet()) {
             System.out.println("key: " + i + " value: " + capitalCities.get(i));
         }
-
+*/
         // 補充:
         Map<String, String> map = capitalCities;
         for (Map.Entry<String, String> entry : map.entrySet()) {
@@ -83,7 +91,8 @@ like: String keys and String values:
          */
 
         // Create a HashMap object called people
-        HashMap<String, Integer> people = new HashMap<String, Integer>();
+        Map<String, Integer> people = new HashMap<>();
+                // Type
 
         // Add keys and values (Name, Age)
         people.put("John", 32);

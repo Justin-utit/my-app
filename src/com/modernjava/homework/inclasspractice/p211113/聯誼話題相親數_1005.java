@@ -22,11 +22,11 @@ public class 聯誼話題相親數_1005 {
 
     }
 
-    public static int getAmicableNumber(int num){
+    public static int getAmicableNumber(int num){ // 220
 
 
 
-        return 0;
+        return 0; // 不是相親數，就回傳-1
     }
 
 

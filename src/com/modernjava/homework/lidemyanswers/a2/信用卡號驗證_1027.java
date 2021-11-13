@@ -42,7 +42,7 @@ public class 信用卡號驗證_1027 {
             int odd = Integer.valueOf(String.valueOf(cardNum.charAt(i)));
             // System.out.printf("%d ", odd);
             // 若是在計算的過程中某一位數加權後的結果比 10 大，那請減去 9
-            int weightOdd = odd*2;
+            int weightOdd = odd*2;  // 5*2 = 10,  1*2 = 2
             if(weightOdd>=10)
                 oddSum += weightOdd-9;
             else

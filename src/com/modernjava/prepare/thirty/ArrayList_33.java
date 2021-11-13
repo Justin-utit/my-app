@@ -16,15 +16,16 @@ public class ArrayList_33 {
         // Date
         // Integer
 
-        String[] strArr = new String[12];
+        String[] strArr = new String[12]; //
 
         // 陣列加強版
-        ArrayList<String> cars = new ArrayList<>();
+        ArrayList<String> cars = new ArrayList<>(); // 10 -> 10
+                                                    // 10 -> size = 20
+        // Integer
         // 10 + 10 + 10
         // 21
 
         // 如何知道 ArrayList的初始大小
-
         // ArrayList實作-> 之後的作業
         cars.add("Volvo");
         cars.add("BMW");
