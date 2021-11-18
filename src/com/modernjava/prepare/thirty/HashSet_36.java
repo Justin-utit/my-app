@@ -54,6 +54,7 @@ public class HashSet_36 {
         numbers.add(4);
         numbers.add(7);
         numbers.add(8);
+        numbers.add(7);
 
         // Show which numbers between 1 and 10 are in the set
         for(int i = 1; i <= 10; i++) {

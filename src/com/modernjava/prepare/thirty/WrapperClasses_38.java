@@ -13,6 +13,7 @@ Primitive Data Type	Wrapper Class
     double	Double
     boolean	Boolean
     char	Character
+    使用情境:
    Sometimes you must use wrapper classes, for example when working with Collection objects,
    such as ArrayList, where primitive types cannot be used (the list can only store objects):
  */

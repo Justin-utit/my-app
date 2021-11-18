@@ -11,7 +11,7 @@ public class Iterator_37 {
         To use an Iterator, you must import it from the java.util package.
          */
         // Make a collection
-        ArrayList<String> cars = new ArrayList<String>();
+        ArrayList<String> cars = new ArrayList();
         cars.add("Volvo");
         cars.add("BMW");
         cars.add("Ford");
@@ -47,7 +47,7 @@ public class Iterator_37 {
         }
         System.out.println(numbers);
 
-                /*
+                /* (重要)
         Note: Trying to remove items using a for loop or a for-each loop would not work correctly
         because the collection is changing size at the same time that the code is trying to loop.
          */
@@ -80,7 +80,7 @@ public class Iterator_37 {
         System.out.println(numbers);
 
 
-        /*
+        /* 重要
         Note: Trying to remove items using a for loop or a for-each loop would not work correctly
         because the collection is changing size at the same time that the code is trying to loop.
          */
