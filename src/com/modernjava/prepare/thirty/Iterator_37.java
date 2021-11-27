@@ -23,8 +23,8 @@ public class Iterator_37 {
         // Print the first item
         System.out.println(it.next());
 
-        while(it.hasNext()) {
-            System.out.println(it.next());
+        while(it.hasNext()) { // Volvo是否有Next?
+            System.out.println(it.next()); // Volvo.Next -> BMW
         }
 
         /*
@@ -37,17 +37,23 @@ public class Iterator_37 {
         numbers.add(2);
         numbers.add(23);
 
-        // 使用iterator
-        Iterator<Integer> it2 = numbers.iterator();
-        while(it2.hasNext()) {
-            Integer i = it2.next();
-            if(i < 10) {
-                it2.remove();
-            }
-        }
-        System.out.println(numbers);
+        // 容器
+        // for() -> 跑容器內的東西
+        // 使用情境: 如果在跑的過程中，需要去異動容器內的元素時 -> Iterator
 
-                /* (重要)
+        // 使用iterator
+//        Iterator<Integer> it2 = numbers.iterator();
+//        while(it2.hasNext()) {
+//
+//            Integer i = it2.next();
+////            System.out.println(i);
+//            if(i < 10) {
+//                it2.remove(); // 8 & 2 removed
+//            }
+//        }
+//        System.out.println(numbers);
+
+        /* (重要)
         Note: Trying to remove items using a for loop or a for-each loop would not work correctly
         because the collection is changing size at the same time that the code is trying to loop.
          */
@@ -74,7 +80,7 @@ public class Iterator_37 {
         numbers.add(23);
         for(int i = 0; i<numbers.size(); i++){
             if(numbers.get(i)<10){
-                numbers.remove(i);
+                numbers.remove(i); // 跑for loop 的過程中，若有新增/刪除元素等，改變size的動作，就用 Iterator
             }
         }
         System.out.println(numbers);

@@ -9,11 +9,11 @@ public class HashSet_36 {
      */
     public static void main(String[] args) {
         // Create a HashSet object called cars that will store strings:
-        HashSet<String> cars = new HashSet<String>();
+        HashSet<String> cars = new HashSet<>();
         cars.add("Volvo");
         cars.add("BMW");
         cars.add("Ford");
-        cars.add("BMW");
+        cars.add("BMW"); // 重複的元素(項目)，會自動消除
         cars.add("Mazda");
         System.out.println(cars);
         // Note: In the example above, even though BMW is added twice it only appears once in the set
