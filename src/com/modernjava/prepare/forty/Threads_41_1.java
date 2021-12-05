@@ -1,5 +1,9 @@
 package com.modernjava.prepare.forty;
 
+/*
+    演算法 example 35 -> Search Insert Position
+ */
+
 // If the class extends the Thread class, the thread can be run by creating an instance of the class and call its start()
 public class Threads_41_1 extends Thread {
     public static void main(String[] args) {

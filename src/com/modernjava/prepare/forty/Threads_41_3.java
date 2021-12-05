@@ -12,6 +12,11 @@ public class Threads_41_3 implements Runnable
         System.out.println("Thread names are following:");
         System.out.println(guruThread1.getName());
         System.out.println(guruThread2.getName());
+
+        // java 8
+        new Thread(() -> {
+            System.out.println("hello thread");
+        }).start();
     }
 
     /*
@@ -25,8 +30,11 @@ public class Threads_41_3 implements Runnable
     }
 
     /*
-    https://litotom.com/java-thread-runnable/
+    使用時機
     https://popcornylu.gitbooks.io/java_multithread/content/thread.html
+    以賽馬為例
+    https://litotom.com/java-thread-runnable/
+
     https://programming.im.ncnu.edu.tw/J_Chapter9.htm
      */
 }
