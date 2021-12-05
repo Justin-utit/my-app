@@ -5,18 +5,39 @@ package com.modernjava.prepare.forty;
 public class Threads_41_3 implements Runnable
 {
     public static void main(String[] args) {
-        Thread guruThread1 = new Thread("Guru1");
-        Thread guruThread2 = new Thread("Guru2");
-        guruThread1.start();
-        guruThread2.start();
-        System.out.println("Thread names are following:");
-        System.out.println(guruThread1.getName());
-        System.out.println(guruThread2.getName());
+
+//        Thread guruThread1 = new Thread("Guru1");
+//        Thread guruThread2 = new Thread("Guru2");
+//        guruThread1.start();
+//        guruThread2.start();
+//
+//        System.out.println("Thread names are following:");
+//        System.out.println(guruThread1.getName());
+//        System.out.println(guruThread2.getName());
 
         // java 8
-        new Thread(() -> {
-            System.out.println("hello thread");
-        }).start();
+//        new Thread(() -> {
+//            System.out.println("hello thread");
+//        }).start();
+
+        System.out.println(1);
+
+//        new Thread(() -> {
+//            System.out.println("hello thread");
+//        }).start();
+
+        someMethod();
+
+        System.out.println(2);
+
+    }
+
+    // db撈資料
+    public static void someMethod(){
+        // 跑一分鐘 (耗時)
+
+        // 出錯
+
     }
 
     /*

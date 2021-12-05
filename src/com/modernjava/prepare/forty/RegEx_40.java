@@ -64,8 +64,16 @@ public class RegEx_40 {
         Matcher m = p.matcher("as");
         boolean b = m.matches();
 
+        // chaining
         //2nd way
-        boolean b2=Pattern.compile(".s").matcher("as").matches();
+         boolean b2 = Pattern.compile(".s").matcher("as").matches();
+
+        // 0 1 2 3 4
+        // geeksforgeeks.org
+
+//        Pattern p = Pattern.compile(".s");
+//        Matcher m = p.matcher("as");
+//        boolean b2 = m.matches();
 
         //3rd way
         boolean b3 = Pattern.matches(".s", "as");
@@ -90,6 +98,14 @@ public class RegEx_40 {
         https://alvinalexander.com/blog/post/java/common-regular-expressions-that-java-developers-need/
          */
 
+        /*
+             CD   2D
+         */
+
+        boolean res = validate("#@mail.com");
+        System.out.println(res);
+
+        // java regular expression email
 
     }
     public static final Pattern VALID_EMAIL_ADDRESS_REGEX =

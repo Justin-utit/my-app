@@ -22,6 +22,12 @@ public class Exceptions_39 {
             System.out.println("Something went wrong.");
         }
 
+        try{
+            // 可能出錯的程式碼區塊
+        } catch (Exception e){
+            // 出錯後，會進來執行的區塊
+        }
+
         /*
         Finally
             The finally statement lets you execute code, after try...catch, regardless of the result:
@@ -29,10 +35,17 @@ public class Exceptions_39 {
         try {
             int[] myNumbers = {1, 2, 3};
             System.out.println(myNumbers[10]);
+
+            // IO
+            // 把文字寫進某個檔案 Input
+            // 從某個檔案讀出文字 Output
+            // 套件
+
         } catch (Exception e) {
             System.out.println("Something went wrong.");
         } finally {
             System.out.println("The 'try catch' is finished.");
+
         }
 
         /*
@@ -50,8 +63,7 @@ public class Exceptions_39 {
     static void checkAge(int age) {
         if (age < 18) {
             throw new ArithmeticException("Access denied - You must be at least 18 years old.");
-        }
-        else {
+        } else {
             System.out.println("Access granted - You are old enough!");
         }
     }
