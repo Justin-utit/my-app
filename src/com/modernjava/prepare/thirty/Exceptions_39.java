@@ -11,53 +11,70 @@ Java Exceptions
     The try and catch keywords come in pairs:
  */
 public class Exceptions_39 {
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
+
+
         try {
-            //  Block of code to try
-            int[] myNumbers = {1, 2, 3};
-            System.out.println(myNumbers[10]); // error!
-        }
-        catch(Exception e) {
-            //  Block of code to handle errors
-            System.out.println("Something went wrong.");
-        }
-
-        try{
-            // 可能出錯的程式碼區塊
-        } catch (Exception e){
-            // 出錯後，會進來執行的區塊
-        }
-
-        /*
-        Finally
-            The finally statement lets you execute code, after try...catch, regardless of the result:
-         */
-        try {
-            int[] myNumbers = {1, 2, 3};
-            System.out.println(myNumbers[10]);
-
-            // IO
-            // 把文字寫進某個檔案 Input
-            // 從某個檔案讀出文字 Output
-            // 套件
-
+            temp(); // 潛在會丟出來的例外錯誤
         } catch (Exception e) {
-            System.out.println("Something went wrong.");
-        } finally {
-            System.out.println("The 'try catch' is finished.");
-
+//            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
-        /*
-        The throw keyword
-        The throw statement allows you to create a custom error.
-        The throw statement is used together with an exception type.
-        There are many exception types available in Java:
-        ArithmeticException, FileNotFoundException, ArrayIndexOutOfBoundsException, SecurityException, etc:
-         */
 
-        checkAge(15); // Set age to 15 (which is below 18...)
-        checkAge(20);
+//        try {
+//            //  Block of code to try
+//            int[] myNumbers = {1, 2, 3};
+//            System.out.println(myNumbers[10]); // error!
+//        }
+//        catch(Exception e) {
+//            //  Block of code to handle errors
+//            System.out.println("Something went wrong.");
+//        }
+//
+//        // xxx
+//
+//
+//
+//        try{
+//            // 可能出錯的程式碼區塊
+//        } catch (Exception e){
+//            // 出錯後，會進來執行的區塊
+//            // System.out.println(e.getMessage());
+//        }
+//
+//        /*
+//        Finally
+//            The finally statement lets you execute code, after try...catch, regardless of the result:
+//         */
+//        try {
+//            int[] myNumbers = {1, 2, 3};
+//            System.out.println(myNumbers[10]);
+//
+//            // IO
+//            // 把文字寫進某個檔案 Input
+//            // 從某個檔案讀出文字 Output
+//            // 套件
+//
+//        } catch (Exception e) {
+//            System.out.println("Something went wrong.");
+//        } finally {
+//            System.out.println("The 'try catch' is finished.");
+//            // io.close();
+//        }
+//
+//        /*
+//        The throw keyword
+//        The throw statement allows you to create a custom error.
+//        The throw statement is used together with an exception type.
+//        There are many exception types available in Java:
+//        ArithmeticException, FileNotFoundException, ArrayIndexOutOfBoundsException, SecurityException, etc:
+//         */
+//
+//        checkAge(15); // Set age to 15 (which is below 18...)
+//        checkAge(20);
+
+
     }
 
     static void checkAge(int age) {
@@ -67,4 +84,21 @@ public class Exceptions_39 {
             System.out.println("Access granted - You are old enough!");
         }
     }
+
+    static void temp() throws Exception{
+
+//        int[] myNumbers = {1, 2, 3};
+//        System.out.println(myNumbers[10]); // error!
+
+        temp2();
+    }
+
+    static void temp2() throws Exception{
+
+        int[] myNumbers = {1, 2, 3};
+        System.out.println(myNumbers[10]); // error!
+
+
+    }
+
 }

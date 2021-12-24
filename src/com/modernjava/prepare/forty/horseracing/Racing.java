@@ -12,7 +12,7 @@ public class Racing {
         Horse h3 = new Horse();
         h3.start();
 
-        for (int i=0; i<1000; i++){
+        for (int i=0; i<1000; i++){ // 0 - 999
             h1++;
             System.out.println("Main Thread (h1):"+h1);
             try {

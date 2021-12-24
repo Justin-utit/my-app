@@ -34,64 +34,63 @@ public class RegEx_40 {
 
         The find() method returns true if the pattern was found in the string and false if it was not found.
          */
-        Pattern pattern = Pattern.compile("w3schools", Pattern.CASE_INSENSITIVE);
-        Matcher matcher = pattern.matcher("Visit W3Schools!");
-        boolean matchFound = matcher.find();
-        if(matchFound) {
-            System.out.println("Match found");
-        } else {
-            System.out.println("Match not found");
-        }
-
-        /*
-        Metacharacters are characters with a special meaning:
-
-        Metacharacter	Description
-        |	Find a match for any one of the patterns separated by | as in: cat|dog|fish
-        .	Find just one instance of any character
-        ^	Finds a match as the beginning of a string as in: ^Hello
-        $	Finds a match at the end of the string as in: World$
-        \d	Find a digit
-        \s	Find a whitespace character
-        \b	Find a match at the beginning of a word like this: \bWORD, or at the end of a word like this: WORD\b
-         */
-        /*
-        直接用這個網站給的例子去看:
-            https://www.geeksforgeeks.org/regular-expressions-in-java/
-         */
-        //1st way
-        Pattern p = Pattern.compile(".s");// . represents single character
-        Matcher m = p.matcher("as");
-        boolean b = m.matches();
-
-        // chaining
-        //2nd way
-         boolean b2 = Pattern.compile(".s").matcher("as").matches();
-
-        // 0 1 2 3 4
-        // geeksforgeeks.org
-
-//        Pattern p = Pattern.compile(".s");
+//        Pattern pattern = Pattern.compile("w3schools", Pattern.CASE_INSENSITIVE);
+//        Matcher matcher = pattern.matcher("Visit W3Schools!");
+//        boolean matchFound = matcher.find();
+//        if(matchFound) {
+//            System.out.println("Match found");
+//        } else {
+//            System.out.println("Match not found");
+//        }
+//
+//        /*
+//        Metacharacters are characters with a special meaning:
+//
+//        Metacharacter	Description
+//        |	Find a match for any one of the patterns separated by | as in: cat|dog|fish
+//        .	Find just one instance of any character
+//        ^	Finds a match as the beginning of a string as in: ^Hello
+//        $	Finds a match at the end of the string as in: World$
+//        \d	Find a digit
+//        \s	Find a whitespace character
+//        \b	Find a match at the beginning of a word like this: \bWORD, or at the end of a word like this: WORD\b
+//         */
+//        /*
+//        直接用這個網站給的例子去看:
+//            https://www.geeksforgeeks.org/regular-expressions-in-java/
+//         */
+//        //1st way
+//        Pattern p = Pattern.compile(".s");// . represents single character
 //        Matcher m = p.matcher("as");
-//        boolean b2 = m.matches();
-
-        //3rd way
-        boolean b3 = Pattern.matches(".s", "as");
-        System.out.println(b+" "+b2+" "+b3);
-
-
-
-        // Following line prints "true" because the whole
-        // text "geeksforgeeks" matches pattern
-        // "geeksforge*ks"
-        System.out.println(Pattern.matches(
-                "geeksforge*ks", "geeksforgeeks"));
-
-        // Following line prints "false" because the whole
-        // text "geeksfor" doesn't match pattern "g*geeks*"
-        System.out.println(
-                Pattern.matches("g*geeks*", "geeksfor"));
-
+//        boolean b = m.matches();
+//
+//        // chaining
+//        //2nd way
+//         boolean b2 = Pattern.compile(".s").matcher("as").matches();
+//
+//        // 0 1 2 3 4
+//        // geeksforgeeks.org
+//
+////        Pattern p = Pattern.compile(".s");
+////        Matcher m = p.matcher("as");
+////        boolean b2 = m.matches();
+//
+//        //3rd way
+//        boolean b3 = Pattern.matches(".s", "as");
+//        System.out.println(b+" "+b2+" "+b3);
+//
+//
+//
+//        // Following line prints "true" because the whole
+//        // text "geeksforgeeks" matches pattern
+//        // "geeksforge*ks"
+//        System.out.println(Pattern.matches(
+//                "geeksforge*ks", "geeksforgeeks"));
+//
+//        // Following line prints "false" because the whole
+//        // text "geeksfor" doesn't match pattern "g*geeks*"
+//        System.out.println(
+//                Pattern.matches("g*geeks*", "geeksfor"));
 
         /*
         常見應用
@@ -101,12 +100,10 @@ public class RegEx_40 {
         /*
              CD   2D
          */
-
         boolean res = validate("#@mail.com");
         System.out.println(res);
 
         // java regular expression email
-
     }
     public static final Pattern VALID_EMAIL_ADDRESS_REGEX =
             Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
