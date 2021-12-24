@@ -13,10 +13,12 @@ public class CP2 extends Thread{
     public static void main(String[] args) {
         CP2 thread = new CP2();
         thread.start();
+
         // Wait for the thread to finish
         while(thread.isAlive()) {
             System.out.println("Waiting...");
         }
+
         // Update amount and print its value
         System.out.println("Main: " + amount);
         amount++;
@@ -25,5 +27,5 @@ public class CP2 extends Thread{
     public void run() {
         amount++;
         System.out.println("extra thread: " + amount);
-    }
+    } // 終點
 }

@@ -3,6 +3,7 @@ package com.modernjava.prepare.forty;
 import java.util.ArrayList;
 
 /*
+    λ      表達式
     Lambda Expressions were added in Java 8.
 
     一個傳入參數，之後回傳值的語法
@@ -19,13 +20,29 @@ import java.util.ArrayList;
     To use more than one parameter, wrap them in parentheses:
     (parameter1, parameter2) -> expression
 
+    public int sum(int num, int num2){
+
+        if(){
+
+        }
+
+        for(){
+
+        }
+
+        return num+num2;
+    }
+
     限制:
     Expressions are limited. They have to immediately return a value, and they cannot contain variables,
     assignments or statements such as if or for.
     In order to do more complex operations, a code block can be used with curly braces.
+
     If the lambda expression needs to return a value, then the code block should have a return statement.
+
     不想記就直接這樣寫，就解除限制了
     (parameter1, parameter2) -> { code block }
+    (parameter1) -> { code block }
  */
 public class LambdaExpression_42 {
     public static void main(String[] args) {
@@ -37,6 +54,18 @@ public class LambdaExpression_42 {
         numbers.add(8);
         numbers.add(1);
 
-        numbers.forEach(  (n) -> { System.out.println(n); }  );
+        String[] strArr = {"1","2","3"};
+        for(String n : strArr){
+            System.out.println(n);
+        }
+        System.out.println();
+
+        numbers.forEach(          (n) -> { System.out.println(n); }            );
     }
+
+    public int addOne(int num){
+        int a = 0;
+        return num++;
+    }
+
 }

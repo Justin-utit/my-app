@@ -22,6 +22,7 @@ public class CP extends Thread{
     }
 
     public void run() {
+
         amount++;
     }
 }
