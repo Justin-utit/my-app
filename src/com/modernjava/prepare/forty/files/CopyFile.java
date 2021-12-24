@@ -1,4 +1,4 @@
-package com.modernjava.prepare.thirty;
+package com.modernjava.prepare.forty.files;
 
 import java.io.*;
 public class CopyFile {
