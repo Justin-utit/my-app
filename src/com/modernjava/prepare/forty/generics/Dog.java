@@ -1,4 +1,4 @@
 package com.modernjava.prepare.forty.generics;
 
-public class Dog extends Animals{
+public class Dog extends Animal {
 }
